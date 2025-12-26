@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>そら | Sports, Game, AI Creator</title>
+    <meta name="description" content="AIを活用したデジタルクリエイティブ制作を行っています。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&family=BIZ+UDGothic:wght@400;700&family=BIZ+UDMincho:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☁️</text></svg>">
+</head>
+
+<body>
+
+    <!-- Site Header -->
+    <header class="site-header">
+        <div class="header-logo">
+            <span class="logo-icon">☁️</span> <span class="logo-text">そら</span>
+        </div>
+        <nav class="site-nav">
+            <ul class="nav-list">
+                <li><a href="#top" class="nav-link">トップ</a></li>
+                <li><a href="#works" class="nav-link">作品</a></li>
+                <li><a href="#sns" class="nav-link">発信</a></li>
+                <li><a href="#activities" class="nav-link">活動</a></li>
+                <li><a href="#contact" class="nav-link">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <!-- Hero Section -->
+        <section class="hero section" id="top">
+            <div class="hero-slideshow-container">
+                <div class="hero-slideshow-track">
+                    <div class="hero-slide" style="background-image: url('images/works_maze.png');"></div>
+                    <div class="hero-slide" style="background-image: url('images/works_coin.png');"></div>
+                    <div class="hero-slide" style="background-image: url('images/works_br.png');"></div>
+                    <div class="hero-slide" style="background-image: url('images/works_profile.png');"></div>
+                    <div class="hero-slide" style="background-image: url('images/works_pomodoro.png');"></div>
+                    <div class="hero-slide" style="background-image: url('images/works_ratio.png');"></div>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-profile-container">
+                    <img src="images/profile_namito.png" alt="Sora Profile" class="hero-profile-img">
+                </div>
+                <h1 class="hero-title">そら</h1>
+                <p class="hero-subtitle">AIをどう使えば面白くなるかを考えながら、</p>
+                <p class="hero-catchphrase">日々制作しています。</p>
+
+                <div class="hero-buttons">
+                    <a href="#works" class="hero-btn primary">作品を見る ↓</a>
+                    <a href="#sns" class="hero-btn secondary">最新情報をチェック 📢</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section class="profile section" id="profile">
+            <h2 class="section-title">プロフィール</h2>
+            <div class="profile-content">
+                <div class="profile-text">
+                    <h3 class="profile-name">そら / Sora</h3>
+                    <p>こんにちは！</p>
+                    <p>
+                        <strong>AIを活用したデザイン制作</strong>やデジタルコンテンツの表現に取り組むクリエイター、そらです。
+                    </p>
+                    <p>
+                        ツールそのものにとらわれず、「どう使えば面白くなるか？」を常に考えながら、
+                        <strong>新しい技術と遊び心をミックスした独自のスタイル</strong>を模索しています。
+                    </p>
+                    <p>
+                        AI画像生成やデジタルアート制作を中心に、アイデアをすぐ形にするスピード感を大切にし、
+                        "今この瞬間"にしか生まれない表現を追いかけています。
+                        変化の早いAIの世界を楽しみつつ、見た人の心がちょっと動くようなコンテンツづくりを目指しています。
+                    </p>
+                </div>
+                <!-- Added Profile Image -->
+                <div class="profile-image">
+                    <img src="images/profile_namito.png" alt="Sora Profile" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Works Section (Carousel) -->
+        <section class="works section" id="works">
+            <h2 class="section-title">作品</h2>
+            <div class="works-wrapper">
+                <button class="carousel-arrow prev" aria-label="Previous slide">❮</button>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+
+                        <!-- Game 1: 3D Maze -->
+                        <article class="work-card">
+                            <div class="work-image-container">
+                                <img src="images/works_maze.png" alt="3D Maze Game" loading="lazy">
+                                <span class="category-label game">GAME</span>
+                                <span class="new-label">NEW</span>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-card-title">3D迷路ゲーム</h3>
+                                <p class="work-card-description">Web3D技術を使った没入型迷路ゲーム</p>
+                                <div class="work-card-actions">
+                                    <a href="https://dmeiro3.vercel.app/" target="_blank"
+                                        class="btn btn-accent">プレイする</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Game 2: Coin Shooter -->
+                        <article class="work-card">
+                            <div class="work-image-container">
+                                <img src="images/works_coin.png" alt="Coin Shooter Game" loading="lazy">
+                                <span class="category-label game">GAME</span>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-card-title">コインシューティング</h3>
+                                <p class="work-card-description">制限時間内にコイン獲得を目指すカジュアルゲーム</p>
+                                <div class="work-card-actions">
+                                    <a href="https://youware.app/project/6mjgs6eieu?enter_from=personal_center"
+                                        target="_blank" class="btn btn-accent">プレイする</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Game 3: Battle Royale -->
+                        <article class="work-card">
+                            <div class="work-image-container">
+                                <img src="images/works_br.png" alt="Battle Royale Game" loading="lazy">
+                                <span class="category-label game">GAME</span>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-card-title">バトルロワイヤルシューティング</h3>
+                                <p class="work-card-description">短時間で楽しめるブラウザベースのバトルロワイヤル</p>
+                                <div class="work-card-actions">
+                                    <a href="https://youware.app/project/dxqq02gnm7?enter_from=personal_center"
+                                        target="_blank" class="btn btn-accent">プレイする</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- App 1: Image Ratio Changer -->
+                        <article class="work-card">
+                            <div class="work-image-container">
+                                <img src="images/works_ratio.png" alt="Image Ratio Changer" loading="lazy">
+                                <span class="category-label app">APP</span>
+                                <span class="new-label">NEW</span>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-card-title">画像比率チェンジャー</h3>
+                                <p class="work-card-description">画像の比率やサイズを簡単に調整・ダウンロードできるツール</p>
+                                <div class="work-card-actions">
+                                    <a href="https://sora-image-ratio-changer.vercel.app/" target="_blank"
+                                        class="btn btn-accent">使う</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- App 2: AI Profile -->
+                        <article class="work-card">
+                            <div class="work-image-container">
+                                <img src="images/works_profile.png" alt="AI Profile Generator" loading="lazy">
+                                <span class="category-label app">APP</span>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-card-title">未来のSNSプロフィールジェネレーター</h3>
+                                <p class="work-card-description">AIでユニークな未来型SNSプロフィールを作成</p>
+                                <div class="work-card-actions">
+                                    <a href="https://youware.app/project/92hyvrik8y?enter_from=personal_center"
+                                        target="_blank" class="btn btn-accent">アプリを開く</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- App 2: Pomodoro -->
+                        <article class="work-card">
+                            <div class="work-image-container">
+                                <img src="images/works_pomodoro.png" alt="Pomodoro Timer" loading="lazy">
+                                <span class="category-label app">APP</span>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-card-title">ポモドーロタイマー</h3>
+                                <p class="work-card-description">集中力を習慣化するミニマルなタイマーアプリ</p>
+                                <div class="work-card-actions">
+                                    <a href="https://pomodoro-mu-wheat.vercel.app/" target="_blank"
+                                        class="btn btn-accent">使う</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Creative 1: LINE Stickers -->
+                        <article class="work-card">
+                            <div class="work-image-container">
+                                <img src="images/works_sticker.png" alt="LINE Stickers" loading="lazy">
+                                <span class="category-label creative">CREATIVE</span>
+                            </div>
+                            <div class="work-card-content">
+                                <h3 class="work-card-title">LINEスタンプ</h3>
+                                <p class="work-card-description">日常を彩るオリジナルキャラクターのスタンプ</p>
+                                <div class="work-card-actions">
+                                    <a href="https://store.line.me/stickershop/author/5261408/ja" target="_blank"
+                                        class="btn btn-accent">ストアを見る</a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <button class="carousel-arrow next" aria-label="Next slide">❯</button>
+            </div>
+            <div class="carousel-dots"></div>
+        </section>
+
+        <!-- SNS / Writing Section -->
+        <section class="sns section" id="sns">
+            <h2 class="section-title">発信</h2>
+            <div class="sns-grid">
+                <!-- Note -->
+                <a href="https://note.com/zerowng" target="_blank" class="sns-card">
+                    <div class="sns-image">
+                        <img src="images/note_thumbnail.png" alt="Note Writing" loading="lazy">
+                    </div>
+                    <div class="sns-content">
+                        <div class="sns-header">
+                            <span class="sns-platform">note</span>
+                        </div>
+                        <p class="sns-description">制作記録・AIに関する考察・アウトプットまとめ</p>
+                    </div>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/channel/UCidDDOxpZDJ6rXwnYntl4EQ" target="_blank" class="sns-card">
+                    <div class="sns-image">
+                        <img src="images/youtube_thumbnail.png" alt="YouTube Channel" loading="lazy">
+                    </div>
+                    <div class="sns-content">
+                        <div class="sns-header">
+                            <span class="sns-platform">YouTube</span>
+                        </div>
+                        <p class="sns-description">制作AIの解説・メイキング動画を配信中</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section class="activities section" id="activities">
+            <h2 class="section-title">活動</h2>
+            <div class="content-wrapper">
+                <ul class="activities-list">
+                    <li>AIアニメ制作</li>
+                    <li>AI漫画制作</li>
+                    <li>ゲーム・アプリ制作</li>
+                    <li>SNS発信</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">お問い合わせ</h2>
+            <div class="content-wrapper">
+                <ul class="contact-list">
+                    <li><a href="https://note.com/zerowng" target="_blank">noteのDMまで</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="copyright">&copy; 2025 そら</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
