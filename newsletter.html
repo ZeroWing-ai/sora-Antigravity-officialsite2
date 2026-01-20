@@ -121,19 +121,13 @@
                 <h3 class="text-xl font-bold mb-2">ニュースレターに登録</h3>
                 <p class="text-sm text-gray-400 mb-6">スパムは送りません。解除はいつでも可能です。</p>
 
-                <form action="https://mail.os7.biz/add/dKmu" method="post" id="newsletterForm" class="space-y-4">
-                    <div class="text-left">
-                        <label for="email" class="sr-only">Email Address</label>
-                        <input type="email" name="email" id="email" required placeholder="example@email.com"
-                            class="w-full px-4 py-3 bg-[#0f0f0f]/50 border border-gray-700 rounded-lg focus:outline-none focus:border-[#4C8C64] focus:ring-1 focus:ring-[#4C8C64] transition-colors text-white placeholder-gray-600">
-                        <p id="emailError" class="text-red-500 text-xs mt-1 hidden">有効なメールアドレスを入力してください。</p>
-                    </div>
-                    <button type="submit"
-                        class="w-full px-4 py-3 bg-[#4C8C64] hover:bg-[#3d7a53] text-white font-bold rounded-lg transition-all transform hover:scale-[1.02] shadow-lg shadow-[#4C8C64]/20">
-                        無料で登録する
-                    </button>
-                    <!-- Hidden fields for the specific mail service if needed, usually mostly standard names -->
-                </form>
+                <div class="text-center">
+                    <a href="https://mail.os7.biz/add/dKmu" target="_blank"
+                        class="inline-block w-full px-4 py-4 bg-[#4C8C64] hover:bg-[#3d7a53] text-white font-bold rounded-lg transition-all transform hover:scale-[1.02] shadow-lg shadow-[#4C8C64]/20 text-lg">
+                        登録はこちら！
+                    </a>
+                    <p class="text-xs text-gray-500 mt-4">Orange Mailの登録ページへ移動します</p>
+                </div>
             </div>
         </div>
 
@@ -162,31 +156,7 @@
         &copy; 2025 Sora. All rights reserved.
     </footer>
 
-    <script>
-        // Simple Form Validation
-        const form = document.getElementById('newsletterForm');
-        const emailInput = document.getElementById('email');
-        const emailError = document.getElementById('emailError');
 
-        form.addEventListener('submit', function (e) {
-            const email = emailInput.value;
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-            if (!emailRegex.test(email)) {
-                e.preventDefault();
-                emailError.classList.remove('hidden');
-                emailInput.classList.add('border-red-500');
-            } else {
-                emailError.classList.add('hidden');
-                emailInput.classList.remove('border-red-500');
-            }
-        });
-
-        emailInput.addEventListener('input', function () {
-            emailError.classList.add('hidden');
-            emailInput.classList.remove('border-red-500');
-        });
-    </script>
 </body>
 
 </html>
