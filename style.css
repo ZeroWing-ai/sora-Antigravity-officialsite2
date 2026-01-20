@@ -6,7 +6,8 @@
     /* Very light gray for backgrounds */
     --link-color: #111111;
     --font-heading: 'BIZ UDMincho', serif;
-    --font-body: 'BIZ UDMincho', serif;
+    --font-body: 'BIZ UDGothic', sans-serif;
+    /* Switched to Gothic for better screen readability */
 
     --spacing-xs: 0.8rem;
     /* Increased from 0.5rem */
@@ -41,8 +42,12 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-body);
-    font-weight: 400;
-    line-height: 1.8;
+    font-weight: 500;
+    /* Increased from 400 for better legibility */
+    line-height: 2.0;
+    /* Increased from 1.8 for very relaxed reading */
+    letter-spacing: 0.05em;
+    /* Added breathing room between characters */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -53,9 +58,12 @@ h3,
 .hero-title,
 .section-title {
     font-family: var(--font-heading);
-    font-weight: 600;
-    letter-spacing: -0.02em;
+    font-weight: 700;
+    /* Increased weight */
+    letter-spacing: 0.05em;
+    /* Check spacing */
     color: var(--link-color);
+    line-height: 1.5;
 }
 
 a {
