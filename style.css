@@ -659,7 +659,7 @@ img {
 /* SNS / Writing Section */
 .sns-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-md);
 }
 
