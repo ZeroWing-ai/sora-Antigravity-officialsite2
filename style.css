@@ -278,11 +278,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top;
-    transform: scale(1.6);
-    /* Zoom in */
-    transform-origin: top center;
-    /* Focus zoom on top (face) */
+    object-position: center;
 }
 
 .hero-title {
@@ -367,8 +363,8 @@ img {
 }
 
 .profile-image {
-    width: 300px;
-    /* Slightly larger image */
+    width: 250px;
+    /* Adjusted size */
     max-width: 40%;
     /* Prevent taking too much space */
     flex-shrink: 0;
@@ -377,10 +373,11 @@ img {
 .profile-image img {
     width: 100%;
     height: auto;
-    border-radius: var(--border-radius);
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
     object-position: center;
-    /* Show full body/center */
-    /* mask-image: radial-gradient(circle, black 60%, transparent 100%); Optional soft mask */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .profile-text {
